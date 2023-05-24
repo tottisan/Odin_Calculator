@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP - Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blue.css" id="theme" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Calculator -->
+      <article class="calculator">
+        <!-- Header -->
+        <header class="calc">
+          <h1 class="calc__title">calc</h1>
+
+          <div class="theme">
+            <h2 class="theme__title">Theme</h2>
+
+            <div class="theme__header">
+              <div class="theme__options">
+                <label for="blue" class="header__title">1</label>
+                <label for="light" class="header__title">2</label>
+                <label for="dark" class="header__title">3</label>
+              </div>
+
+              <div class="toggle__theme">
+                <input
+                  type="radio"
+                  class="toggle__input active"
+                  id="blue"
+                  checked
+                />
+
+                <input type="radio" class="toggle__input" id="light" />
+
+                <input type="radio" class="toggle__input" id="dark" />
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Screen result -->
+        <section class="screen">
+          <h2 class="screen__total" id="screen__result"></h2>
+        </section>
+
+        <!-- Numbers panel -->
+        <section class="panel">
+          <button class="btn btn_number">7</button>
+          <button class="btn btn_number">8</button>
+          <button class="btn btn_number">9</button>
+          <button class="btn btn--blue" id="delete">DEL</button>
+          <button class="btn btn_number">4</button>
+          <button class="btn btn_number">5</button>
+          <button class="btn btn_number">6</button>
+          <button class="btn btn_operator">+</button>
+          <button class="btn btn_number">1</button>
+          <button class="btn btn_number">2</button>
+          <button class="btn btn_number">3</button>
+          <button class="btn btn_operator">-</button>
+          <button class="btn btn_number">.</button>
+          <button class="btn btn_number">0</button>
+          <button class="btn btn_operator">/</button>
+          <button class="btn btn_operator">*</button>
+          <footer class="panel__footer">
+            <button class="btn btn--blue reset" id="reset">RESET</button>
+            <button class="btn btn--red" id="equal">=</button>
+          </footer>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
