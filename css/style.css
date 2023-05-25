@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+:root {
+  /* THEME 1 BLUE */
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  /* Keys */
+  --key-dark-blue: hsl(225, 21%, 49%);
+  --shadow-dark-blue: hsl(224, 28%, 35%);
+  --key-red: hsl(6, 63%, 50%);
+  --shadow-dark-red: hsl(6, 70%, 34%);
+  --key-light-grayish: hsl(30, 25%, 89%);
+  --shadow-grayish-orange: hsl(28, 16%, 65%);
+  /* Text */
+  --text-very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --text-white: hsl(0, 0%, 100%);
+
+  /* THEME 2 LIGHT */
+  --light-main-background: hsl(0, 0%, 90%);
+  --light-toggle-keypad-background: hsl(0, 5%, 81%);
+  --light-screen-background: hsl(0, 0%, 93%);
+  /* Keys */
+  --key-moderate-cyan: hsl(185, 42%, 37%);
+  --shadow-moderate-cyan: hsl(185, 58%, 25%);
+  --key-orange: hsl(25, 98%, 40%);
+  --shadow-orange: hsl(25, 99%, 27%);
+  --key-grayish-yellow: hsl(45, 7%, 89%);
+  --shadow-grayish-orange: hsl(35, 11%, 61%);
+  /* Text */
+  --text-very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+  /* THEME 3 DARK */
+  --dark-main-background: hsl(268, 75%, 9%);
+  --dark-toggle-keypad-screen-background: hsl(268, 71%, 12%);
+  /* Keys */
+  --key-dark-violet: hsl(281, 89%, 26%);
+  --shadow-vivid-magenta: hsl(285, 91%, 52%);
+  --key-pure-cyan: hsl(176, 100%, 44%);
+  --shadow-soft-cyan: hsl(177, 92%, 70%);
+  --key-very-dark-violet: hsl(268, 47%, 21%);
+  --shadow-dark-magenta: hsl(290, 70%, 36%);
+  /* Text */
+  --text-light-yellow: hsl(52, 100%, 62%);
+  --text-very-dark-blue: hsl(198, 20%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Calculator article */
+
+.calculator {
+  width: 100%;
+  min-width: 10rem;
+  max-width: 28rem;
+}
+
+.calc__title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Theme Widget */
+.theme {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.theme__title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.theme__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  position: relative;
+}
+
+.theme__options {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.header__title {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.screen {
+  border-radius: 7px;
+  height: 5.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.screen__total {
+  margin: 0;
+  text-align: end;
+}
+
+.panel {
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.5rem;
+  padding: 1.3rem;
+}
+
+.panel__footer {
+  width: 100%;
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 0.5rem;
+}
+
+.btn--blue {
+  width: 100%;
+}
+
+.btn--red {
+  width: 100%;
+}
+
+/* Toggle */
+.toggle__theme {
+  width: 4rem;
+
+  display: flex;
+  gap: 0.8rem;
+  background: var(--dark-toggle-keypad-screen-background);
+  border-radius: 1rem;
+}
+
+.toggle__input {
+  height: 0.813rem;
+  width: 0.813rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  appearance: none;
+  transition: all 0.7s ease-in-out;
+}
