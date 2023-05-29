@@ -1,0 +1,43 @@
+body {
+  background: var(--dark-main-background);
+  color: var(--text-light-yellow);
+}
+
+.screen {
+  background: var(--dark-toggle-keypad-screen-background);
+}
+
+.panel {
+  background: var(--dark-toggle-keypad-screen-background);
+}
+
+.btn {
+  background: var(--key-very-dark-violet);
+}
+
+.btn_number,
+.btn_operator {
+  box-shadow: inset 0px -3px 0px 0px var(--shadow-dark-magenta);
+  color: var(--text-light-yellow);
+}
+
+.btn--blue {
+  background: var(--key-dark-violet);
+  color: var(--key-light-grayish);
+  box-shadow: inset 0px -3px 0px 0px var(--shadow-vivid-magenta);
+}
+
+.btn--red {
+  background: var(--key-pure-cyan);
+  color: var(--text-very-dark-blue);
+  box-shadow: inset 0px -3px 0px 0px var(--shadow-soft-cyan);
+}
+
+/* Toggle */
+.toggle__theme .toggle__label {
+  background: var(--dark-toggle-keypad-screen-background);
+}
+
+.dark:checked {
+  background: var(--key-pure-cyan);
+}
