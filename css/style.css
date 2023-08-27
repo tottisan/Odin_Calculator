@@ -185,3 +185,9 @@ header {
   appearance: none;
   transition: all 0.7s ease-in-out;
 }
+
+@media (max-width: 375px) {
+  .panel {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
